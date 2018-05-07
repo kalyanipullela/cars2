@@ -25,9 +25,12 @@
 			  <td>{{ car.Cost }}</td>
 			  <td>{{ car.Details}}</td>
 			  <td> 
-			    <a href="#/cars/{{car._id}}/show" class="btn btn-info"><font style="font-family:georgia,garamond,serif;font-size:15px"> SHOW </font> </a>
-			    <a href="#/cars/{{car._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> <font style="font-family:georgia,garamond,serif;font-size:15px">EDIT </font> </a>
-			  	<a ng-click="deleteCar(car._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span> <font style="font-family:georgia,garamond,serif;font-size:15px"> DELETE </font> </a>
+			    <a href="#/cars/{{car._id}}/show"><button type="button" class="btn btn-info " style="font-family:georgia,garamond,serif;font-size:15px;height:30px;
+    width:100px;"> SHOW </button> </a>
+			    <a href="#/cars/{{car._id}}/edit" > <button type="button" class="btn btn-success" style="font-family:georgia,garamond,serif;font-size:15px;height:30px;
+    width:100px;">EDIT </button> </a>
+			  	<a ng-click="deleteCar(car._id)" > <button type="button" class="btn btn-danger" style="font-family:georgia,garamond,serif;font-size:15px;height:30px;
+    width:100px;"> DELETE </button> </a>
 			  </td>
 			</tr>
 			</tbody>
