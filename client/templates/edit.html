@@ -1,0 +1,38 @@
+<div class="panel panel-default" ng-init="showCar()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" 
+class="glyphicon glyphicon-edit"> </span> <font style="font-family:georgia,garamond,serif;font-size:20px">EDIT CAR DETAILS</font></p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="updateCar()">
+   <div class="form-group">
+      <label for="Name" style="font-family:georgia,garamond,serif;font-size:12px" >NAME</label>
+      <input type="text" class="form-control" id="Name" ng-model="car.Name" value="car.Name">
+    </div>
+    <div class="form-group">
+      <label for="Length" style="font-family:georgia,garamond,serif;font-size:12px">LENGTH</label>
+      <input type="text" class="form-control" id="Length" ng-model="car.Length" value="car.Length">
+    </div>
+    <div class="form-group">
+      <label for="Weight" style="font-family:georgia,garamond,serif;font-size:12px">WEIGHT</label>
+      <input type="text" class="form-control" id="Weight" ng-model="car.Weight" value="car.Weight">
+    </div>
+    <div class="form-group">
+      <label for="Color" style="font-family:georgia,garamond,serif;font-size:12px">COLOR</label>
+      <input type="text" class="form-control" id="Color" ng-model="car.Color" value="car.Color">
+      <div class="form-group">
+      <label for="Fueltype" style="font-family:georgia,garamond,serif;font-size:12px">FUEL TYPE</label>
+      <input type="text" class="form-control" id="Fueltype" ng-model="car.Fueltype" value="car.Fueltype">
+      <div class="form-group">
+      <label for="Cost" style="font-family:georgia,garamond,serif;font-size:12px">COST</label>
+      <input type="text" class="form-control" id="Cost" ng-model="car.Cost" value="car.Cost">
+    </div>
+	<div class="form-group">
+      <label for="Details" style="font-family:georgia,garamond,serif;font-size:12px"> Details </label>
+      <input type="text" class="form-control" id="Details" ng-model="car.Details" value="car.Details">
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default" style="font-family:georgia,garamond,serif;font-size:15px">SAVE</button>
+    <a href="#/cars" class="btn btn-default" style="font-family:georgia,garamond,serif;font-size:15px"> CANCEL</a>
+</form>		
+    <div>
+<div>

@@ -9,7 +9,7 @@ myApp.config(function($routeProvider){
 			templateUrl:'templates/list.html',
 			controller:'carController'
 		})
-    .when('/cars/create', {
+		.when('/cars/create', {
 			templateUrl:'templates/add.html',
 			controller:'carController'
 		})
@@ -17,8 +17,10 @@ myApp.config(function($routeProvider){
 			templateUrl:'templates/edit.html',
 			controller:'carController'
 		})
-    .when('/cars/:id/show', {
+		.when('/cars/:id/show', {
 			templateUrl:'templates/show.html',
 			controller:'carController'
 		});
 });
+
+

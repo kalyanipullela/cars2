@@ -1,18 +1,20 @@
 <div class="panel panel-default" ng-init="showCar()">
 	<div class="panel-heading">
-	  <p class="panel-title"> CarDetail Information</p>
+	  <p class="panel-title"><font style="font-family:georgia,garamond,serif;font-size:20px">CAR DETAILS</font></p>
 	</div>
 	<div class="panel-body">
 		<form>
 		<div class="form-group">
-		 <label class="form-control">Name: {{ car.Name }}</label>
-		 <label class="form-control">Length: {{ car.Length }}</label>
-		 <label class="form-control">Weight: {{ car.Weight }}</label>
-		 <label class="form-control">Color: {{ car.Color }}</label>
-		 <label class="form-control">Fueltype: {{ car.Fueltype }}</label>
-		 <label class="form-control">Cost: {{ car.Cost }}</label>
-		 <label class="form-control">ID: {{ car._id }}</label>
-		<a href="#/cars" class="btn btn-default"> Cancel</a>
+		 <label class="form-control" style="font-family:georgia,garamond,serif;font-size:12px">NAME {{ car.Name }}</label>
+		 <label class="form-control" style="font-family:georgia,garamond,serif;font-size:12px">LENGTH {{ car.Length }}</label>
+		 <label class="form-control" style="font-family:georgia,garamond,serif;font-size:12px">WEIGHT {{ car.Weight }}</label>
+		 <label class="form-control" style="font-family:georgia,garamond,serif;font-size:12px">COLOR {{ car.Color }}</label>
+		 <label class="form-control" style="font-family:georgia,garamond,serif;font-size:12px">FUEL TYPE {{ car.Fueltype }}</label>
+		 <label class="form-control" style="font-family:georgia,garamond,serif;font-size:12x">COST {{ car.Cost }}</label>
+		 <label class="form-control" style="font-family:georgia,garamond,serif;font-size:12px">DETAILS: {{ car.Details }}</label>
+		 <label class="form-control" style="font-family:georgia,garamond,serif;font-size:12px">ID: {{ car._id }}</label>
+		 
+		<a href="#/cars" class="btn btn-default" style="font-family:georgia,garamond,serif;font-size:15px"> CANCEL</a>
 		</div>
 	</form>		
     <div>

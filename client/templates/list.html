@@ -1,19 +1,18 @@
 <div class="panel panel-default" ng-init="getCars()">
 	<div class="panel-heading">
-	  <p class="panel-title"><span style="color:#5bc0de;" 
-class="glyphicon glyphicon-list"> </span> cars List</p>
+	  <p class="panel-title">
 	</div>
 	<div class="panel-body">
-		<table class="table table-striped">
+		<table class="table table-striped" style="font-family:georgia,garamond,serif;font-size:20px">
 			<thead>
 			<tr>
-			  <th>Name</th>
-			  <th>Length</th>
-			  <th>Weight</th>
-			  <th>Color</th>
-                <th>Color</th>
-			  <th>Fueltype</th>
-			  <th>Cost</th>
+			  <th>NAME</th>
+			  <th>LENGTH</th>
+			  <th>WEIGHT</th>
+			  <th>COLOR</th>
+			  <th>FUEL TYPE</th>
+			  <th>COST</th>
+			  <th>DETAILS</th>
 			</tr>
 			</thead>
 			<tbody>
@@ -21,13 +20,14 @@ class="glyphicon glyphicon-list"> </span> cars List</p>
 			  <td>{{ car.Name }}</td>
 			  <td>{{ car.Length }}</td>
 			  <td>{{ car.Weight }}</td>
-                 <td>{{ car.Color }}</td>
-                 <td>{{ car.Fueltype }}</td>
-                 <td>{{ car.Cost }}</td>
+			  <td>{{ car.Color }}</td>
+			  <td>{{ car.Fueltype }}</td>
+			  <td>{{ car.Cost }}</td>
+			  <td>{{ car.Details}}</td>
 			  <td> 
-			    <a href="#/cars/{{car._id}}/show" class="btn btn-info"> Show  </a>
-			    <a href="#/cars/{{car._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Edit  </a>
-			  	<a ng-click="deleteCar(car._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span> Delete </a>
+			    <a href="#/cars/{{car._id}}/show" class="btn btn-info"><font style="font-family:georgia,garamond,serif;font-size:15px"> SHOW </font> </a>
+			    <a href="#/cars/{{car._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> <font style="font-family:georgia,garamond,serif;font-size:15px">EDIT </font> </a>
+			  	<a ng-click="deleteCar(car._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span> <font style="font-family:georgia,garamond,serif;font-size:15px"> DELETE </font> </a>
 			  </td>
 			</tr>
 			</tbody>

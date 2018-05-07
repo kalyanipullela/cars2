@@ -3,30 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MEAN CRUD</title>
+	<title>ON WHEELS</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="style.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-image:url('cars1.jpg');background-repeat:no-repeat;height: 100%;width:100% background-size: cover;background-position: center;">
 
 <div class="container">
 	<div class="row">
 		<div class="header clearfix">
 			<nav>
 			  <ul class="nav nav-pills pull-right">
-			    <li role="presentation" class="active"><a href="#/cars"><span class="glyphicon glyphicon-th-list"> </span> Car List</a></li>
-			    <li role="presentation"><a href="#/employee/create"> 
-			    <span class="glyphicon glyphicon-plus"> </span>	Add New car</a></li>
+			    
+			    <li role="presentation" class="active"></li>
+			    <li role="presentation"><form action="#/cars/create"> 
+				<button style="font-family:georgia,garamond,serif;font-size:20px;color:#273746">ADD CAR</button>
+			   </form>
 			  </ul>
+			  <header class="header well well-sm">
+		    <p style="font-family:georgia,garamond,serif;font-size:30px;color:#5D6D7E">ON WHEELS</p>
+		</header>
 			</nav>
-			<h3 class="text-muted">Simple MEAN web Application using CRUD operation</h3>
+			<h3 class="text-muted" ><font style="font-family:georgia,garamond,serif;font-size:30px;color:white">SEE THE DETAILS OF CAR</font></h3>
 		</div>
-		<div ng-view></div>
-		
-		
+			<div ng-view></div>
+		<!--2 style="padding: 10px 16px;
+  background: #E1F5FE;
+  color: Black;padding: 16px;font-family:georgia,garamond,serif;font-size:30px">ON WHEELS</h2>-->
 
-	</div >
-    <div ng-controller="carController"> {{getCars}} </div>
+</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -34,6 +39,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
 <script src="app.js"></script>
 <script src="controllers/controllers.js"></script>
-
 </body>
 </html>
