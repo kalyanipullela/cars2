@@ -5,11 +5,11 @@ var mongoose = require('mongoose');
 mongoose.connect("mongodb://kalyani:kalyani@ds062178.mlab.com:62178/crudoperations");
 var Car = mongoose.model('Car', mongoose.Schema({
 	Name : String,
-	Length : String,
-	Weight : String,
+	Length : Number,
+	Weight : Number,
 	Color : String,
 	Fueltype : String,
-	Cost : String,
+	Cost : Number,
 	Details  : String
 }));
 app.use(bodyParser.urlencoded({extended:true}));

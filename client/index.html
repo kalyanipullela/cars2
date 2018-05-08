@@ -6,8 +6,85 @@
 	<title>ON WHEELS</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="style.css" rel="stylesheet">
+    <style>
+    <style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+        .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: brown;
+}
+
+.containerTab {
+    padding: 70px;
+    color: brown;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+   .closebtn {
+    float: right;
+    color: red;
+    font-size: 35px;
+    cursor: pointer;
+}  
+       
+    </style>
 </head>
-<body style="background-image:url('cars1.jpg');background-repeat:no-repeat;height: 100%;width:100% background-size: cover;background-position: center;">
+<body style="background-image:url('http://www.hd-freewallpapers.com/latest-wallpapers/desktop-background-pictures-of-cars-download.jpg');background-repeat:no-repeat;height: 100%;width:100% background-size: cover;background-position: center;background-attachment: fixed;">
+    <div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:#BDC3C7  ;color:#283593  ;font-family:georgia,garamond,serif">
+  RECENT CARS
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:#BDC3C7  ;color:#283593  ;font-family:georgia,garamond,serif">
+ POPULAR CARS
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:#BDC3C7  ;color:#283593  ;font-family:georgia,garamond,serif">
+  UPCOMING CARS
+  </div>
+</div>
+    <div id="b1" class="containerTab" style="display:none;background:#BDC3C7 ">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        
+    <a href="https://www.cardekho.com/"> <img src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/17q3/685272/cadillac-for-2018-whats-new-feature-car-and-driver-photo-690932-s-original.jpg" altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')" width="250" height="150"></a>   
+        <a href="https://www.cardekho.com/"> <img src="https://www.rentrent.com.tr/cache/uploads/araclar/2017/hyundai/i20/hyundai-i20-14-mpi-100-hp-elite-standart-otomatik-benzin-otomatik-851-1-545x310.png"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>
+    <a href="https://www.cardekho.com/"> <img src="https://i.kinja-img.com/gawker-media/image/upload/s--hlqD8l2m--/c_scale,f_auto,fl_progressive,q_80,w_800/nrsreogeoycibm0fdhor.jpg" altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>
+     <a href="https://www.cardekho.com/"><img src="https://image.cars.co.za/image/upload/t_large/v10/carsimages/3087786_2.jpg"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>
+ <a href="https://www.cardekho.com/"><img src="https://cache3.pakwheels.com/system/car_generation_pictures/4564/original/Suzuki_Cultus_2017_(1).jpg?1493101375"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>
+        
+        
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:#BDC3C7 ">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <a href="https://www.cardekho.com/"> <img src="https://cars.usnews.com/dims4/USNEWS/51dac70/2147483647/resize/640x420%3E/format/jpeg/quality/85/?url=https%3A%2F%2Fcars.usnews.com%2Fstatic%2Fimages%2Farticle%2F201611%2F126310%2F2017-Chevrolet-Corvette-GrandSport-009_640x420.jpg"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>   
+        <a href="https://www.cardekho.com/"> <img src="https://www.carmax.com/~/media/images/carmax/com/Articles/most-popular-cars-under-20k/12-dodge-charger.png?la=en&hash=0B6091B56AFF2AA9306638E38E5DEC8D1BA37B58"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>
+    <a href="https://www.cardekho.com/"> <img src="http://www.newcardeals.ltd.uk/img/full/17forfiestl3drblufr1800.jpg"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>
+     <a href="https://www.cardekho.com/"><img src="https://sporteology.com/wp-content/uploads/2014/06/2014-Mercedes-Benz-SLS-AMG.jpg"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')" width="250" height="150"></a>
+ <a href="https://www.cardekho.com/"><img src="http://2.bp.blogspot.com/-p_Ef8V_P2u0/UoIt-u0kbdI/AAAAAAAAV94/-U3-Mzn5qsA/s1600/ferrari-458-speciale-black-grey.jpg"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>
+    </div>
+
+<div id="b3" class="containerTab" style="display:none;background:#BDC3C7 ">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <a href="https://www.cardekho.com/"> <img src="https://img.gaadicdn.com/images/carexteriorimages/upcoming/360x240/Maruti/Maruti-Grand-Vitara/047.jpg"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')" width="250" height="150"></a>   
+        <a href="https://www.cardekho.com/"> <img src="https://www.motorbeam.com/wp-content/uploads/Maruti-Cross-Hatchback.jpg"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>
+    <a href="https://www.cardekho.com/"> <img src="https://www.drivespark.com/img/2017/10/x17-1508220488-upcoming-cars-in-india-expected-price-launch-dates-specifications-images-02.jpg.pagespeed.ic.Es8bYTBoDR.jpg"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>
+     <a href="https://www.cardekho.com/"><img src="https://gaadiwaadi.com/wp-content/uploads/2016/09/2016-Toyota-Vios.jpg"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>
+ <a href="https://www.cardekho.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3hX8tEKSfBAAWYaA-9DiTjgXJNGdiCOIJ15kz2cqt7Qga0oKgg"  altSrc="https://rafver.is/wp-content/uploads/2016/05/no-image.jpg" onerror="this.src = $(this).attr('altSrc')"  width="250" height="150"></a>
+    </div>
 
 <div class="container">
 	<div class="row">
@@ -15,15 +92,16 @@
 			<nav>
 			  <ul class="nav nav-pills pull-right">
 			    
-			    <form action="#/cars/create"> 
-				<button style="font-family:georgia,garamond,serif;font-size:20px;color:#273746;margin-top: 15px;margin-right: 10px">ADD CAR</button>
-			   </form>
-			  </ul>
-			  <header class="header well well-sm">
-		    <p style="font-family:georgia,garamond,serif;font-size:30px;color:#5D6D7E">ON WHEELS</p>
-		</header>
+			    <br><a href="#/cars/create" style="font-family:georgia,garamond,serif;font-size:30px;color:lavenderblush;margin-top: 25px;margin-right: 10px;"class="w3-button w3-black;"><strong>ADD CAR</strong>
+                  </a>
+                  
+                  <a href="#/cars" style="font-family:georgia,garamond,serif;font-size:30px;color:lavenderblush;margin-top: 25px;margin-right: 10px"class="w3-button w3-black"><strong>SHOW CARS</strong>
+                  </a>
+                  </ul>
+                <a href="#/cars/home"><p style="font-family:georgia,garamond,serif;font-size:50px;color:white"><strong>ON WHEELS</strong></p></a>
+	
 			</nav>
-			<h3 ><font style="font-family:georgia,garamond,serif;font-size:30px;color:white">SEE THE DETAILS OF CAR</font></h3>
+			<h3 ><font style="font-family:georgia,garamond,serif;font-size:30px;color:white">The Cars We Drive Say a Lot About Us</font></h3>
 		</div>
 			<div ng-view></div>
 		<!--2 style="padding: 10px 16px;
@@ -32,6 +110,18 @@
 
 </div>
 </div>
+       <script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>

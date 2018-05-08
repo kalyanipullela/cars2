@@ -27,7 +27,8 @@ myApp.controller('carController', function($scope,$route,$routeParams,$http){
 	$scope.deleteCar = function(id){
 		var id = id;
 		$http.delete('/api/cars/'+ id).then(function(response){
-			$route.reload();
+			//$route.reload();
+            window.location.href = '/';
 		});
 	};
 	
