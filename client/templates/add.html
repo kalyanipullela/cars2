@@ -21,8 +21,9 @@
                 <input type="text" class="form-control" id="Color" ng-model="car.Color" placeholder="Color of the Car" required>
             </div>
                 <div class="form-group">
-                    <label for="Fueltype" style="font-family:georgia,garamond,serif;font-size:12px">FUEL TYPE</label>
-                   <select ng-model="car.Fueltype" id ="Fueltype" style="font-family:georgia,garamond,serif;font-size:15px" required>
+                    <label for="Fueltype" style="font-family:georgia,garamond,serif;font-size:12px;">FUEL TYPE</label>
+                   <select ng-model="car.Fueltype" id ="Fueltype" style="font-family:georgia,garamond,serif;font-size:15px;" required>
+                        <option value="" selected disabled hidden>Choose here</option>
                     <option value="Petrol">Petrol</option>
                        <option value="Diseal">Diseal</option>
                     </select>
@@ -30,6 +31,7 @@
                     <div class="form-group">
                         <label for="Cost" style="font-family:georgia,garamond,serif;font-size:12px">COST (in rs)</label>
                         <select ng-model="car.Cost" id="Cost" style="font-family:georgia,garamond,serif;font-size:15px" required>
+                             <option value="" selected disabled hidden>Choose here</option>
                     <option value="Below 2 Lakhs">Below 2 Lakhs</option>
                        <option value="2-3 Lakhs">2-3 Lakhs</option>
                             <option value="More than 3 Lakhs">More than 3 Lakhs</option>
