@@ -1,8 +1,13 @@
+<script>
+function msg()
+    {
+        alert("Car Deleted Succcesfully");
+    }</script>
 <div class="panel panel-default" ng-init="getCars()">
 	<div class="panel-heading">
 	  <p class="panel-title">
 	</div>
-	<div class="panel-body">
+	<div class="panel-body" style="background-color:#EDE7F6">
 		<table class="table table-striped" style="font-family:georgia,garamond,serif;font-size:20px">
 			<thead>
 			<tr>
@@ -27,10 +32,9 @@
 			  <td> 
 			    <a href="#/cars/{{car._id}}/show"><button type="button" class="btn btn-info " style="font-family:georgia,garamond,serif;font-size:15px;height:30px;
     width:100px;"> SHOW </button> </a>
-			    <a href="#/cars/{{car._id}}/edit" > <button type="button" class="btn btn-success" style="font-family:georgia,garamond,serif;font-size:15px;height:30px;
+			    <a href="#/cars/{{car._id}}/edit" > <button type="button" formaction="#/cars" class="btn btn-success" style="font-family:georgia,garamond,serif;font-size:15px;height:30px;
     width:100px;">EDIT </button> </a>
-			  	<a ng-click="deleteCar(car._id)" > <button type="button" class="btn btn-danger" style="font-family:georgia,garamond,serif;font-size:15px;height:30px;
-    width:100px;"> DELETE </button> </a>
+			  	<a ng-click="deleteCar(car._id)"> <button type="button" class="btn btn-danger" style="font-family:georgia,garamond,serif;font-size:15px;height:30px;width:100px;" onclick="msg()"> DELETE </button> </a>
 			  </td>
 			</tr>
 			</tbody>

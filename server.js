@@ -9,7 +9,7 @@ var Car = mongoose.model('Car', mongoose.Schema({
 	Weight : Number,
 	Color : String,
 	Fueltype : String,
-	Cost : Number,
+	Cost : String,
 	Details  : String
 }));
 app.use(bodyParser.urlencoded({extended:true}));

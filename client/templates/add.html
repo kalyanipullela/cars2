@@ -1,40 +1,48 @@
-<div class="panel panel-default">
+<div class="panel panel-default" >
     <div class="panel-heading">
-        <p class="panel-title"><span style="color:#5bc0de;" style="font-family:georgia,garamond,serif;font-size:20px"> </span> Add New car</p>
+        <p class="panel-title"><span style="color:#5bc0de;" style="font-family:georgia,garamond,serif;font-size:20px"> </span> ADD A NEW CAR</p>
     </div>
-    <div class="panel-body">
-        <form ng-submit="addCar()">
+    <div class="panel-body" style="background-color:#EDE7F6">
+        <form ng-submit="addCar()" action="#/cars">
             <div class="form-group">
                 <label for="Name" style="font-family:georgia,garamond,serif;font-size:12px">NAME</label>
-                <input type="text" class="form-control" id="Name" ng-model="car.Name" required>
+                <input type="text" class="form-control" id="Name" ng-model="car.Name" placeholder="Name of the Car" required>
             </div>
             <div class="form-group">
                 <label for="Length" style="font-family:georgia,garamond,serif;font-size:12px">LENGTH (in cms)</label>
-                <input type="number" class="form-control" id="Length" ng-model="car.Length" required>
+                <input type="number" class="form-control" id="Length" ng-model="car.Length" placeholder="Length of the Car" required>
             </div>
             <div class="form-group">
                 <label for="Weight" style="font-family:georgia,garamond,serif;font-size:12px">WEIGHT (in kgs)</label>
-                <input type="number" class="form-control" id="Weight" ng-model="car.Weight" required>
+                <input type="number" class="form-control" id="Weight" ng-model="car.Weight" placeholder="Weight of the Car" required>
             </div>
             <div class="form-group">
-                <label for="Color" style="font-family:georgia,garamond,serif;font-size:12px" required>COLOR</label>
-                <input type="text" class="form-control" id="Color" ng-model="car.Color">
+                <label for="Color" style="font-family:georgia,garamond,serif;font-size:12px"  required>COLOR</label>
+                <input type="text" class="form-control" id="Color" ng-model="car.Color" placeholder="Color of the Car" required>
             </div>
                 <div class="form-group">
                     <label for="Fueltype" style="font-family:georgia,garamond,serif;font-size:12px">FUEL TYPE</label>
-                    <input type="text" class="form-control" id="Fueltype" ng-model="car.Fueltype" required>
+                   <select ng-model="car.Fueltype" id ="Fueltype" style="font-family:georgia,garamond,serif;font-size:15px" required>
+                    <option value="Petrol">Petrol</option>
+                       <option value="Diseal">Diseal</option>
+                    </select>
                     </div>
                     <div class="form-group">
                         <label for="Cost" style="font-family:georgia,garamond,serif;font-size:12px">COST (in rs)</label>
-                        <input type="number" class="form-control" id="Cost" ng-model="car.Cost" required>
+                        <select ng-model="car.Cost" id="Cost" style="font-family:georgia,garamond,serif;font-size:15px" required>
+                    <option value="Below 2 Lakhs">Below 2 Lakhs</option>
+                       <option value="2-3 Lakhs">2-3 Lakhs</option>
+                            <option value="More than 3 Lakhs">More than 3 Lakhs</option>
+                    </select>
                     </div>
                     <div class="form-group">
                         <label for="Details" style="font-family:georgia,garamond,serif;font-size:12px">Details</label>
-                        <input type="text" class="form-control" id="Details" ng-model="car.Details" required>
+                        <input type="text" class="form-control" id="Details" ng-model="car.Details" placeholder="Details of the Car" required>
                     </div>
-                    <button type="submit" style="color:#5bc0de;" class="btn btn-default" style="font-family:georgia,garamond,serif;font-size:15px">SAVE</button>
+                    <button type="submit" class="btn btn-default" style="font-family:georgia,garamond,serif;font-size:15px" >SAVE</button>
                     <a href="/" class="btn btn-default" style="font-family:georgia,garamond,serif;font-size:15px"> CANCEL</a>
                 
         </form>
     </div>
 </div>
+<script>
